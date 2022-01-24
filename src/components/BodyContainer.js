@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import {
   Grid,
   Card,
@@ -22,7 +22,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 
 export default function BodyContainer(props) {
   const {usernameInfo} = props;
-  const [open, setOpen] = useState(props.error ? true : false);
+
 
   return (
     <>  
@@ -41,11 +41,6 @@ export default function BodyContainer(props) {
           <Avatar sx={{ bgcolor: blue[500] }} aria-label="recipe">
             R
           </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            {/* <MoreVertIcon /> */}
-          </IconButton>
         }
         title={usernameInfo.name}
         subheader={usernameInfo.created_at.split('T')[0]}

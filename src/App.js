@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { Grid } from '@mui/material';
 import HeaderSearch from './components/HeaderSearch';
@@ -19,9 +19,6 @@ function App() {
   const [usernameInfo, setUsernameInfo] = useState();
   const [error,setError] = useState(false);
 
-  // useEffect(() => {
-    
-  // }, []);
 
   return (
      <Grid container maxHeight 
